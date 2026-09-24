@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Política de Privacidade / Privacy Policy — DB Start</title>
+  <meta name="description" content="Política de Privacidade / Privacy Policy do DB Start by EMT">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><img class="brand" src="assets/db-icon-dark.png" alt="DB Start"><div><h1>Política de Privacidade / Privacy Policy</h1><div class="lang">DB Start by EMT</div></div><img class="emt" src="assets/emt-logo-transparent.png" alt="EMT"></header>
+<nav><a href="index.html">Início / Home</a><a href="privacy.html" aria-current="page">Privacidade / Privacy</a><a href="support.html">Suporte / Support</a></nav>
+
+<section lang="pt-PT">
+<p><strong>Última atualização:</strong> 23 de setembro de 2026</p>
+<h2>1. Resumo</h2>
+<p>O DB Start é uma extensão de nova aba que permite organizar perfis, grupos, cartões, agregadores, atalhos, ícones e preferências.</p>
+<p>O DB Start foi concebido para funcionar maioritariamente de forma local e não inclui analytics, telemetria ou publicidade. A única transmissão direta para uma infraestrutura do projeto ocorre quando o utilizador escolhe explicitamente enviar uma mensagem através da funcionalidade <strong>Sugestões</strong>, descrita na secção 6.</p>
+
+<h2>2. Dados guardados localmente</h2>
+<p>A extensão pode guardar no armazenamento local do browser:</p>
+<ul><li>nomes e configuração dos perfis;</li><li>nomes e configuração de grupos;</li><li>nomes, URLs e organização dos cartões e agregadores;</li><li>preferências visuais e de utilização;</li><li>ícones personalizados carregados pelo utilizador;</li><li>caminhos locais definidos pelo utilizador para a integração opcional com aplicações, ficheiros ou pastas;</li><li>preferência de idioma da interface;</li><li>identificadores técnicos locais usados para limitar o abuso do formulário de Sugestões.</li></ul>
+<p>Estes dados destinam-se exclusivamente ao funcionamento da extensão e permanecem no dispositivo ou perfil do browser, salvo quando o próprio utilizador os exporta manualmente.</p>
+
+<h2>3. Importação e exportação</h2>
+<p>O DB Start permite importar e exportar a sua configuração. Os ficheiros de importação são processados localmente pela extensão. A exportação é iniciada pelo utilizador e produz um ficheiro que o próprio utilizador controla.</p>
+<p>A importação de marcadores HTML é igualmente processada localmente.</p>
+
+<h2>4. Pesquisa e navegação</h2>
+<p>Quando o utilizador escreve uma pesquisa, o DB Start abre a pesquisa diretamente no motor escolhido pelo utilizador, por exemplo Brave Search, Qwant, Mojeek ou Google.</p>
+<p>O DB Start não recebe nem armazena remotamente essas pesquisas. O motor de pesquisa selecionado poderá receber a pesquisa de acordo com a respetiva política de privacidade, como aconteceria numa navegação normal para esse serviço.</p>
+<p>Da mesma forma, quando o utilizador abre um cartão Web, passa a navegar diretamente para o endereço configurado. A utilização desse site fica sujeita às práticas de privacidade do respetivo serviço.</p>
+
+<h2>5. Integração local opcional</h2>
+<p>O DB Start pode disponibilizar uma integração opcional com o DB Start Launcher através da API Native Messaging do browser.</p>
+<p>Esta integração serve apenas para pedir ao componente instalado no próprio computador que abra uma aplicação, ficheiro ou pasta local previamente configurados pelo utilizador.</p>
+<p>Os pedidos de Native Messaging são enviados apenas entre a extensão e o host local instalado no computador. O DB Start Launcher não envia esses caminhos ou pedidos ao programador nem a um servidor do DB Start.</p>
+<p>A permissão <code>nativeMessaging</code> é opcional. O utilizador pode utilizar as restantes funcionalidades da extensão sem instalar ou ativar o launcher.</p>
+
+<h2>6. Dados enviados ao programador</h2>
+<p>O DB Start não envia automaticamente ao programador histórico de navegação, pesquisas, URLs guardados, caminhos de ficheiros, nomes de perfis ou grupos, ícones personalizados, conteúdo dos ficheiros importados, nem dados de utilização ou telemetria.</p>
+
+<h3>Sugestões enviadas pelo formulário</h3>
+<p>O botão <strong>Sugestões</strong> abre um formulário dentro do DB Start. Nada é transmitido enquanto o utilizador apenas escreve no formulário. Quando carrega explicitamente em <strong>Enviar</strong>, a extensão transmite por HTTPS o texto da sugestão, a versão instalada do DB Start, o idioma atual da interface, um identificador aleatório da instalação e um identificador aleatório do pedido para uma função de feedback alojada no Supabase.</p>
+<p>Os identificadores servem exclusivamente para controlo de duplicação e limitação de abuso. No servidor, o identificador da instalação e o endereço IP observado são transformados em hashes HMAC antes de serem guardados na tabela técnica de rate limiting. Os valores em claro não são guardados nessa tabela. Os registos técnicos de rate limiting têm retenção máxima prevista de 48 horas.</p>
+<p>A função valida o pedido e encaminha a mensagem através do serviço transacional Brevo para um alias Proton dedicado ao DB Start. O endereço de destino e as credenciais do serviço de correio ficam no servidor e não são incluídos no pacote da extensão. A função não escreve o conteúdo da sugestão na base de dados do projeto e a extensão não guarda o texto da mensagem no seu armazenamento local após o envio.</p>
+<p>O Supabase, a Brevo e a Proton podem processar os dados técnicos necessários à transmissão e entrega, como endereços IP, data/hora, estado de entrega e outros metadados de rede, de acordo com as respetivas políticas. A Brevo processa também o conteúdo da mensagem para efetuar o envio e a mensagem recebida fica armazenada na caixa de correio de destino.</p>
+<p>O DB Start não pede nome nem endereço de e-mail no formulário de sugestões. O utilizador não deve incluir dados pessoais ou sensíveis na mensagem salvo se entender que são necessários. No Firefox, a transmissão de conteúdo e dos dados técnicos associados é declarada como recolha opcional e o browser pode pedir consentimento antes do primeiro envio.</p>
+<p>Esta funcionalidade não constitui telemetria: não envia dados automaticamente, não acompanha a utilização da extensão e só é executada depois de uma ação explícita do utilizador.</p>
+
+<h2>7. Cookies, tracking e publicidade</h2>
+<p>A extensão não cria cookies de tracking e não integra ferramentas de analytics, publicidade ou profiling.</p>
+
+<h2>8. Código remoto</h2>
+<p>A lógica da extensão é incluída no próprio pacote instalado. O DB Start não descarrega nem executa código JavaScript remoto para alterar o seu funcionamento.</p>
+
+<h2>9. Eliminação e controlo dos dados</h2>
+<p>Os dados locais podem ser removidos através das funcionalidades da própria extensão, da limpeza dos dados da extensão pelo browser ou da desinstalação da extensão, de acordo com o comportamento do browser utilizado.</p>
+<p>O utilizador pode exportar a sua configuração antes de remover a extensão. Para questões relativas a mensagens de Sugestões já enviadas, pode contactar o endereço indicado na secção 11.</p>
+
+<h2>10. Alterações futuras</h2>
+<p>Se no futuro forem adicionadas funcionalidades que envolvam contas, sincronização cloud, analytics, telemetria ou novas transmissões de dados, esta política será atualizada antes da disponibilização dessas funcionalidades.</p>
+
+<h2>11. Contacto</h2>
+<p>Para questões de suporte, privacidade ou funcionamento do DB Start: <a href="mailto:dbstart-by-emt@pm.me">dbstart-by-emt@pm.me</a>.</p>
+<p>Este é um endereço dedicado ao projeto DB Start. A utilização do endereço é iniciada pelo utilizador; a extensão não envia automaticamente mensagens para este contacto.</p>
+</section>
+
+<hr>
+
+<section lang="en">
+<p><strong>Last updated:</strong> 23 September 2026</p>
+<h2>1. Summary</h2>
+<p>DB Start is a new-tab extension that lets users organize profiles, groups, cards, aggregators, shortcuts, icons and preferences.</p>
+<p>DB Start is designed to operate mainly on the user's device and does not include analytics, usage telemetry or advertising. The only direct transmission to project infrastructure occurs when the user explicitly chooses to submit a message through the <strong>Suggestions</strong> feature described in section 6.</p>
+
+<h2>2. Data stored locally</h2>
+<p>The extension may store the following in the browser's local extension storage:</p>
+<ul><li>profile names and configuration;</li><li>group names and configuration;</li><li>card and aggregator names, URLs and organization;</li><li>visual and usage preferences;</li><li>custom icons uploaded by the user;</li><li>local paths configured by the user for the optional application, file or folder integration;</li><li>interface language preference;</li><li>local technical identifiers used to limit abuse of the Suggestions form.</li></ul>
+<p>This information is used only to provide the extension's functionality and remains on the device or browser profile unless the user manually exports it.</p>
+
+<h2>3. Import and export</h2>
+<p>DB Start allows users to import and export their configuration. Import files are processed locally by the extension. Export is initiated by the user and produces a file controlled by the user.</p>
+<p>HTML bookmark imports are also processed locally.</p>
+
+<h2>4. Search and navigation</h2>
+<p>When a user enters a search, DB Start opens that search directly in the search engine selected by the user, such as Brave Search, Qwant, Mojeek or Google.</p>
+<p>DB Start does not remotely receive or store those search terms. The selected search provider may receive the query under its own privacy policy, just as it would during normal navigation to that service.</p>
+<p>Likewise, when a user opens a web card, the browser navigates directly to the configured address. Use of that website is subject to the privacy practices of the relevant service.</p>
+
+<h2>5. Optional local integration</h2>
+<p>DB Start can provide optional integration with DB Start Launcher through the browser's Native Messaging API.</p>
+<p>This integration is used only to ask a component installed on the same computer to open an application, file or folder previously configured by the user.</p>
+<p>Native Messaging requests travel only between the extension and the local host installed on the computer. DB Start Launcher does not send those paths or requests to the developer or to a DB Start server.</p>
+<p>The <code>nativeMessaging</code> permission is optional. All normal web-card functionality remains available without installing or enabling the launcher.</p>
+
+<h2>6. Data sent to the developer</h2>
+<p>DB Start does not automatically send the developer browsing history, searches, saved URLs, local file paths, profile or group names, custom icons, imported file contents, usage analytics or telemetry.</p>
+
+<h3>Suggestions submitted through the form</h3>
+<p>The <strong>Suggestions</strong> button opens a form inside DB Start. Nothing is transmitted while the user is only typing. When the user explicitly presses <strong>Send</strong>, the extension sends the message text, installed DB Start version, current interface language, a random installation identifier and a random request identifier over HTTPS to a feedback function hosted on Supabase.</p>
+<p>The identifiers are used solely for duplicate control and abuse prevention. On the server, the installation identifier and the observed IP address are transformed into HMAC hashes before being stored in the technical rate-limiting table. The clear-text values are not stored in that table. Technical rate-limiting records have a planned maximum retention period of 48 hours.</p>
+<p>The function validates the request and forwards the message through the Brevo transactional email service to a dedicated Proton alias for DB Start. The destination address and email-service credentials remain on the server and are not included in the extension package. The function does not write the suggestion content to the project database, and the extension does not retain the message text in local extension storage after submission.</p>
+<p>Supabase, Brevo and Proton may process technical data required for transmission and delivery, such as IP addresses, timestamps, delivery status and other network metadata, according to their respective privacy policies. Brevo also processes the message content in order to deliver it, and the delivered message remains stored in the destination mailbox.</p>
+<p>DB Start does not request a name or email address in the Suggestions form. Users should not include personal or sensitive information unless they consider it necessary. In Firefox, transmission of message content and associated technical data is declared as optional data collection and the browser may request consent before the first submission.</p>
+<p>This feature is not telemetry: it does not send information automatically, does not track extension usage and runs only after an explicit user action.</p>
+
+<h2>7. Cookies, tracking and advertising</h2>
+<p>The extension does not create tracking cookies and does not integrate analytics, advertising or profiling tools.</p>
+
+<h2>8. Remote code</h2>
+<p>The extension's executable logic is included in the installed package. DB Start does not download or execute remote JavaScript code to change its behavior.</p>
+
+<h2>9. Data deletion and user control</h2>
+<p>Local extension data can be removed using DB Start's own controls, by clearing extension data in the browser, or by uninstalling the extension, subject to the behavior of the browser being used.</p>
+<p>Users can export their configuration before removing the extension. For questions concerning Suggestions messages that have already been sent, users can contact the address in section 11.</p>
+
+<h2>10. Future changes</h2>
+<p>If future versions add accounts, cloud synchronization, analytics, telemetry or new data transmissions, this policy will be updated before those features are made available.</p>
+
+<h2>11. Contact</h2>
+<p>For support, privacy or DB Start functionality questions: <a href="mailto:dbstart-by-emt@pm.me">dbstart-by-emt@pm.me</a>.</p>
+<p>This is a dedicated address for the DB Start project. Contact is initiated by the user; the extension does not automatically send messages to this address.</p>
+</section>
+<footer>DB Start by EMT · dbstart-by-emt@pm.me</footer>
+</main>
+</body>
+</html>
